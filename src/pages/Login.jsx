@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Eye, EyeOff } from "lucide-react"
+import child from "../assets/images/main.png"
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false)
@@ -24,8 +25,8 @@ export default function Login() {
           {/* Sign in form */}
           <div className="space-y-6">
             <div>
-              <h1 className="text-3xl font-bold text-[#111111]">Sign in</h1>
-              <p className="mt-2 text-[#666666]">Sign up for free to access to in any of our products</p>
+              <h1 className="text-3xl font-bold text-[#111111]">Log In</h1>
+              <p className="mt-2 text-[#666666]">Log In for free to access to in any of our services</p>
             </div>
 
             <div className="space-y-4">
@@ -112,13 +113,13 @@ export default function Login() {
                 type="submit"
                 className="w-full bg-[#559268] text-white py-3 px-4 rounded-md hover:bg-[#4a8159] transition-colors"
               >
-                Sign in
+                Log In
               </button>
 
               <p className="text-center text-[#333333]">
-                Already have an account?{" "}
+                Don't  have an account?{" "}
                 <a href="/login" className="text-[#559268]">
-                  Log in
+                  Sign Up
                 </a>
               </p>
             </div>
@@ -136,9 +137,11 @@ export default function Login() {
             Sign Up
           </a>
         </div>
+        <div>
         <div className="flex justify-center items-center h-full">
-          <img src="https://placehold.co/400x600" alt="Child with toy" className="object-cover" />
+          <img src={child} alt="Child with toy" className="object-cover" />
         </div>
+      </div>
       </div>
     </div>
   )
